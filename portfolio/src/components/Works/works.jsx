@@ -1,8 +1,20 @@
 import React from 'react'
+import './works.css'
 
 const Works = () => {
   return (
-    <div>Works</div>
+    <section id ='works'>
+    <h2 className="workstitle">My Portfolio</h2>
+    <span className="worksDesc">dfgsdfg fvgbh dfghb cfvgbh xcvgh dcfvgbh dcfvgh</span>
+   <div className="worksImgs">
+    <img src="" alt="" className="worksImg" />
+    <img src="" alt="" className="worksImg" />
+    <img src="" alt="" className="worksImg" />
+    <img src="" alt="" className="worksImg" />
+    <img src="" alt="" className="worksImg" />
+   </div>
+   <button className="worksBtn">See More</button>
+    </section>
   )
 }
 
