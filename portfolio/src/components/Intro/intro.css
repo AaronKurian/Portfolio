@@ -7,7 +7,7 @@
     position: relative;
 
 }
-,bg{
+.bg{
     position: absolute;
     top: -4rem;
     right: 0;
@@ -54,4 +54,25 @@ justify-content: center;
     height: 1rem;
 
 
+}
+
+@media screen and (max-width:840px){
+    .bg{
+        right: -10vw;
+    }
+    .introContent{
+        font-size: 10vw;
+
+    }
+    .hello{
+        font-size: 4.5vw;
+
+    }
+
+    
+}
+@media screen and (max-width:480px){
+    .bg{
+        right: -20vw;
+    }
 }
