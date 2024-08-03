@@ -1,5 +1,14 @@
 import React, {useRef} from 'react'
 import './contact.css'
+import youtube from '../../../src/assets/youtube.png'
+import twitter from '../../../src/assets/twitter.png'
+import facebookicon from '../../../src/assets/facebook-icon.png'
+import instagram from '../../../src/assets/instagram.png'
+
+import adobe from '../../../src/assets/adobe.png'
+import facebook from '../../../src/assets/facebook.png'
+import microsoft from '../../../src/assets/microsoft.png'
+import walmart from '../../../src/assets/walmart.png'
 import emailjs from '@emailjs/browser';
 
 
@@ -33,10 +42,10 @@ const Contact = () => {
     fvgbh xcfvgbh crfvgbh sdf xsdcfv dcfvg xcvgb vgbh sdf xsdcfv dcfvg xcvgb vgbh
 </p>
 <div className="clientImgs">
-    <img src="" alt="" className="clientImg" />
-    <img src="" alt="" className="clientImg" />
-    <img src="" alt="" className="clientImg" />
-    <img src="" alt="" className="clientImg" />
+    <img src={adobe}alt="" className="clientImg" />
+    <img src={microsoft}alt="" className="clientImg" />
+    <img src={walmart}alt="" className="clientImg" />
+    <img src={facebook}alt="" className="clientImg" />
 </div>
         </div>
         <div id="contact">
@@ -48,10 +57,10 @@ const Contact = () => {
     <textarea name="message"  className="msg" rows="5" placeholder='Your Message'></textarea>
     <button type='submit' value='Send' className="submitBtn">Submit</button>
 <div className="links">
-    <img src="" alt="" className="link" />
-    <img src="" alt="" className="link" />
-    <img src="" alt="" className="link" />
-    <img src="" alt="" className="link" />
+    <img src={twitter} alt="" className="link" />
+    <img src={youtube}alt="" className="link" />
+    <img src={facebookicon} alt="" className="link" />
+    <img src={instagram}alt="" className="link" />
 </div>
    </form>
    

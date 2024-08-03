@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./navbar.css"
-import logo from '../../../public/logo.png'
-import contactImg from '../../../public/contactImg.jpg'
+// import logo from '../../../public/logo.png'
+ import contact from '../../../src/assets/contact.png'
 import {Link} from 'react-scroll';
 
 const Navbar= () => {
@@ -19,7 +19,7 @@ const[showMenu, setShowMenu]= useState(false);
         <button className='desktopMenuBtn' onClick={() => {
           document.getElementById('contact').scrollIntoView({behavior: 'smooth'})
         }}>
-            <img src={contactImg} alt="" className='desktopMenuImg' />Contact Me
+            <img src={contact} alt="" className='desktopMenuImg' />Contact Me
         </button>
 
         <img src='' alt="Menu" className='mobMenu' onClick={()=>setShowMenu(!showMenu)} />
