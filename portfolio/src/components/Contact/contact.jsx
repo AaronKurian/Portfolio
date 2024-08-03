@@ -1,9 +1,29 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import './contact.css'
-
+import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('service_ou5kefg', 'template_rlbesgd', form.current, {
+            publicKey: 'bta78XrVXuUjGpE2H',
+          })
+          .then(
+            (result) => {
+              console.log('SUCCESS!');
+              e.target.reset();
+              alert('Email Sent')
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+          );
+      };
+    
   return (
     <section id="contactPage">
         <div id="clients">
@@ -22,9 +42,9 @@ const Contact = () => {
         <div id="contact">
 <h1 className="contactPageTitle">Contact Me</h1>
 <span className="conatctDesc">xdcfvg cfvgbh cvgbh cvgbh </span>
-   <form  className="contactForm">
-    <input type="text" className="name" placeholder='Your Name' />
-    <input type="email" className="email" placeholder='Your Email' />
+   <form  className="contactForm" ref={form} onSubmit={sendEmail}>
+    <input type="text" className="name" placeholder='Your Name' name='your_name'/>
+    <input type="email" className="email" placeholder='Your Email'name='your_email' />
     <textarea name="message"  className="msg" rows="5" placeholder='Your Message'></textarea>
     <button type='submit' value='Send' className="submitBtn">Submit</button>
 <div className="links">
