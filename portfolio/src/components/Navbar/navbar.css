@@ -1,8 +1,8 @@
 .navbar{
-    background: #1e1f2d;
+    background: #15161f;
     height: 5rem;
     width: 100vw;
-    /* max-width: 100rem; */
+    max-width: 100rem;
 margin: 0 auto;
 padding: 1rem 2rem;
 display: flex;
@@ -11,12 +11,14 @@ align-items: center;
 position: sticky;
 top: 0;
 z-index: 3;
+font-size: 1.3rem;
 
 }
 .logo{
     object-fit: cover;
-    height: 3rem;
-    width: 4rem;
+    height: 4rem;
+    width: 6rem;
+    padding-left: 2rem;
 
 }
 .desktopMenuListItem{
@@ -29,7 +31,7 @@ z-index: 3;
     color: #D90429;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid #D90429;
-
+    cursor: pointer;
 
 }
 .desktopMenuBtn{
@@ -41,6 +43,8 @@ z-index: 3;
     justify-content: center;
     padding: 0 1rem;
     border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.05rem
 
 }
 .desktopMenuImg{
@@ -58,6 +62,7 @@ z-index: 3;
     display: none;
     object-fit: cover;
     height: 1.8rem;
+    cursor: pointer;
 }
 
 .navMenu{
@@ -84,6 +89,7 @@ border-radius: 1rem;
 @media screen and (max-width:720px) {
     .mobMenu{
         display: flex;
+        cursor: pointer;
     }
     .desktopMenu{
         display: none;

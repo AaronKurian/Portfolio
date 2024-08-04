@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./navbar.css"
 // import logo from '../../../public/logo.png'
  import contact from '../../../src/assets/messageicon.png'
- import logo4 from '../../../src/assets/logo4.png'
+ import logo5 from '../../../src/assets/logo5.png'
  import menurounded from '../../../src/assets/menurounded.svg'
 import {Link} from 'react-scroll';
 
@@ -11,7 +11,7 @@ const[showMenu, setShowMenu]= useState(false);
 
   return (
     <nav className='navbar'>
-        <img src={logo4} alt="" className='logo' />
+        <img src={logo5} alt="" className='logo' />
         <div className="desktopMenu">
             <Link activeClass='active' to='intro' spy={true} offset={-100} duration={500} className='desktopMenuListItem'>Home</Link>
             <Link activeClass='active' to='skills' spy={true} offset={-50} duration={500} className='desktopMenuListItem'>About</Link>
