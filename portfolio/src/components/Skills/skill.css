@@ -8,6 +8,7 @@
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    background: #1e1f2d;
 }
 .skillTitle{
     font-size: 3rem;
@@ -32,7 +33,8 @@
     margin: 1rem;
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
-    background: rgb(50, 50, 50);
+    background: #8D99AE;
+    color: black;
 }
 .skillBarImg{
     object-fit: cover;
