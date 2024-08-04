@@ -1,7 +1,7 @@
 import React, {useRef} from 'react'
 import './contact.css'
-import youtube from '../../../src/assets/youtube.png'
-import twitter from '../../../src/assets/twitter.png'
+import github from '../../../src/assets/githubicon.png'
+import linkedin from '../../../src/assets/linkedinicon.png'
 import facebookicon from '../../../src/assets/facebook-icon.png'
 import instagram from '../../../src/assets/instagram.png'
 
@@ -36,10 +36,10 @@ const Contact = () => {
   return (
     <section id="contactPage">
         <div id="clients">
-<h1 className="conatactPageTitle">My Clients</h1>
+<h1 className="contactPageTitle">My Clients</h1>
 <p className="clientDesc">
-    sdf xsdcfv dcfvg xcvgb vgbh sdf xsdcfv dcfvg xcvgb vgbh sdf xsdcfv dcfvg xcvgb vgbh
-    fvgbh xcfvgbh crfvgbh sdf xsdcfv dcfvg xcvgb vgbh sdf xsdcfv dcfvg xcvgb vgbh
+    I have Had the oppurtunity to work with a diverse group of companies.
+    Some of the notable companies that I've had worked with includes
 </p>
 <div className="clientImgs">
     <img src={adobe}alt="" className="clientImg" />
@@ -50,15 +50,15 @@ const Contact = () => {
         </div>
         <div id="contact">
 <h1 className="contactPageTitle">Contact Me</h1>
-<span className="conatctDesc">xdcfvg cfvgbh cvgbh cvgbh </span>
+<span className="conatctDesc">Feel free to fill the form below to Contact with me!! </span>
    <form  className="contactForm" ref={form} onSubmit={sendEmail}>
     <input type="text" className="name" placeholder='Your Name' name='your_name'/>
     <input type="email" className="email" placeholder='Your Email'name='your_email' />
     <textarea name="message"  className="msg" rows="5" placeholder='Your Message'></textarea>
     <button type='submit' value='Send' className="submitBtn">Submit</button>
 <div className="links">
-    <img src={twitter} alt="" className="link" />
-    <img src={youtube}alt="" className="link" />
+    <img src={linkedin} alt="" className="link" />
+    <img src={github}alt="" className="link" />
     <img src={facebookicon} alt="" className="link" />
     <img src={instagram}alt="" className="link" />
 </div>

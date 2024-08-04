@@ -33,7 +33,7 @@ justify-content: center;
     font-weight: 100;
 }
 .introName{
-    color: yellow;
+    color: #EF233C;
 }
 .introPara{
     font-size: medium;
@@ -46,6 +46,8 @@ justify-content: center;
     padding: 0.75rem 2rem ;
     border: none;
     border-radius: 2rem;
+    display: flex;
+    align-items: center;
 
 
 }
@@ -53,8 +55,6 @@ justify-content: center;
     object-fit: cover;
     margin: 0 0.25rem;
     height: 1rem;
-
-
 }
 
 
