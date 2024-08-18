@@ -1,0 +1,125 @@
+#contactPage{
+    min-height: calc(100vh_4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding-top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: #1e1f2d; */
+    padding-bottom: 13vh;
+    
+}
+#contact{
+    padding-top: 5rem;
+}
+
+.contactPageTitle{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+
+
+}
+.clientDesc{
+    font-weight: 300;
+    font-size: 1.3rem;
+    
+}
+
+.clientImgs{
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.clientImg{
+    object-fit: cover;
+    width: 23%;
+    min-width: 9rem;
+    margin: auto;
+    padding: 0.25rem;
+
+
+}
+#clients{
+    padding: 2rem;
+}
+
+.contactDesc{
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+
+    
+    
+}
+.contactForm{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+.name, .email, .msg{
+    font-size: large;
+    width: 100%;
+    max-width: 30rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #EDF2F4;
+    border: none;
+    border-radius: 0.5rem;
+    background: #8D99AE;
+
+}
+.submitBtn{
+    background: #EDF2F4;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 0.75rem 3.5rem;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
+
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+    
+}
+.link{
+    object-fit: cover;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    
+}
+.link:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.931); /* Glowing effect with blue color */
+}
+
+.submitBtn:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.8); /* Glowing effect with blue color */
+    filter: brightness(1.0) contrast(1.0); /* Increase brightness and contrast for a shiny effect */
+}
+
+
+@media screen and (max-width:530px){
+    .msg{
+        margin :0.5rem auto;
+        margin-right: 300rem;
+    }
+   
+}

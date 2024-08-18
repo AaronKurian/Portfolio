@@ -1,0 +1,110 @@
+.navbar{
+    background: #15161f;
+    height: 5rem;
+    width: 100%;
+    max-width:1200rem;
+/* margin: 0 auto; */
+padding: 1rem 2rem;
+display: flex;
+justify-content: space-between ;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 3;
+font-size: 1.3rem;
+
+}
+.logo{
+    object-fit: cover;
+    height: 4rem;
+    width: 6rem;
+    padding-left: 2rem;
+
+}
+.desktopMenuListItem{
+    margin: 1rem;
+    cursor: pointer;
+
+
+}
+.desktopMenuListItem:hover{
+    color: #D90429;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #D90429;
+    cursor: pointer;
+
+}
+.desktopMenuBtn{
+    background: #EDF2F4;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.15rem;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    
+}
+
+
+.desktopMenuBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgb(112, 0, 0);
+
+
+}
+.desktopMenuImg{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+}
+.active{
+    color: #D90429;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #D90429;
+}
+.mobMenu{
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+.navMenu{
+    position:absolute;
+top: 4rem;
+right: 2rem;
+z-index: 2;
+display: flex;
+flex-direction: column;
+padding: 0.5rem;
+height: fit-content;
+min-width: 15rem;
+background: rgb(40,40,40);
+border-radius: 1rem;
+}
+
+.listItem{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;;
+    background: rgb(30, 30, 30);
+}
+
+@media screen and (max-width:720px) {
+    .mobMenu{
+        display: flex;
+        cursor: pointer;
+    }
+    .desktopMenu{
+        display: none;
+    }
+    .desktopMenuBtn{
+        display: none;
+    }
+
+}
