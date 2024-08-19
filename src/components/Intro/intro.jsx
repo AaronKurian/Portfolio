@@ -11,7 +11,7 @@ const Intro = () => {
           <span className="introText">I'm <span className="introName">Aaron</span> <br />Website Designer</span>
       <p className="introPara">I'm a skilled Web Designer with experience in creating <br />visually appealing and user friendly website</p> 
 
-      <a href="../../../Aaron-Resume.pdf" target="_blank" rel="noopener noreferrer">
+      <a href="/Aaron-Resume.pdf" target="_blank" rel="noopener noreferrer">
     <button className="btn">
         <img src={resume} alt="Resume" className='btnImg' />
         Resume
